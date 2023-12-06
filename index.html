@@ -7,55 +7,651 @@
     <title>Amzvest</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- css -->
+    <link rel="icon" href="images/amzvest_logo_favicon.png">
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/media.css">
 </head>
 
 <body>
+    <!-- header -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <!-- desktop nav -->
+            <div class="container desktop_nav">
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li> -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recent Campaigns</a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="navbar-brand" href="#"><img src="images/amzvest_logo_dark.png" class="img-fluid"
+                        alt="logo"></a>
+                <div class="navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- mobile nav after breakpoint -->
+            <div class="container-fluid mobile_nav">
+                <a class="navbar-brand" href="#"><img src="images/amzvest_logo_dark.png" class="img-fluid"
+                        alt="logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recent Campaigns</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Categories</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Join Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!-- header ends -->
+
+    <!-- hero starts-->
+    <div class="hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="hero_content text-center">
+                        <h1>Amzvest</h1>
+                        <h3>
+                            BigHearts is the largest global crowdfunding community connecting nonprofits, donors, and
+                            companies in nearly every country.
+                        </h3>
+                        <div class="hero_button">
+                            <a href="#" class="btn btn-general">Learn More</a>
+                            <div class="hero_video">
+                                <button type="button" class="btn btn-play" data-bs-toggle="modal"
+                                    data-bs-target="#videoModal">
+                                    <i class="fa-solid fa-play"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Video Modal -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <!-- <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Video Popup</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div> -->
+                    <div class="modal-body">
+                        <!-- Embed your video here -->
+                        <iframe width="100%" height="450px" src="https://www.youtube.com/embed/your-video-id"
+                            title="YouTube video" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- hero ends -->
+
+    <!-- how it works starts -->
+    <div class="how cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="how_text">
+                        <h4>How it works</h4>
+                        <h2>Fundraising on Amzvest takes just a few minutes</h2>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="how_content">
+                        <div class="how_box">
+                            <div class="hbox_icon">
+                                <i class="fa-solid fa-1"></i>
+                            </div>
+                            <div class="hbox_ct">
+                                <h3>Start with the basics</h3>
+                                <p>Kick things off with your name and location.</p>
+                            </div>
+                        </div>
+                        <div class="how_box">
+                            <div class="hbox_icon">
+                                <i class="fa-solid fa-2"></i>
+                            </div>
+                            <div class="hbox_ct">
+                                <h3>Tell your story</h3>
+                                <p>We'll guide you with tips along the way.</p>
+                            </div>
+                        </div>
+                        <div class="how_box">
+                            <div class="hbox_icon">
+                                <i class="fa-solid fa-3"></i>
+                            </div>
+                            <div class="hbox_ct">
+                                <h3>Share with friends and family</h3>
+                                <p>People out there want to help you.</p>
+                            </div>
+                        </div>
+                        <div class="dashed-line"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- how it works ends -->
+
+    <!-- recent camp start -->
+    <div class="campaign cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="camp_head">
+                        <h4>Where you can help</h4>
+                        <h2>Featured Campaigns </h2>
+                    </div>
+                </div>
+                <div class="owl-carousel">
+                    <div class="slider">
+                        <div class="col-md-6">
+                            <div class="slider_img">
+                                <img src="images/helping_kids.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider_content">
+                                <h3>2023 Year in Help review</h3>
+                                <p>Explore this year's most generous cities, unforgettable
+                                    stories around the globe, and the data behind your collective
+                                    kindness. Look what help can do.</p>
+                                <a href="#" class="btn btn-general">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-6">
+                            <div class="slider_img">
+                                <img src="images/helping_hand.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider_content">
+                                <h3>2023 Year in Help review</h3>
+                                <p>Explore this year's most generous cities, unforgettable
+                                    stories around the globe, and the data behind your collective
+                                    kindness. Look what help can do.</p>
+                                <a href="#" class="btn btn-general">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="col-md-6">
+                            <div class="slider_img">
+                                <img src="images/charity.jpg" class="img-fluid" alt="">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="slider_content">
+                                <h3>2023 Year in Help review</h3>
+                                <p>Explore this year's most generous cities, unforgettable
+                                    stories around the globe, and the data behind your collective
+                                    kindness. Look what help can do.</p>
+                                <a href="#" class="btn btn-general">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="cta cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="cta_content">
+                        <div class="verify">
+                            <img src="images/verified-check-svgrepo-com.svg" class="img-fluid" alt="">
+                            <h3>Trust & Safety</h3>
+                        </div>
+                        <h2>We have your back.</h2>
+                        <h3>With a global team dedicated to trust and safety, we’ve successfully managed fundraisers
+                            worldwide for more than a decade. Don’t worry about a thing, we’ve got you covered.</h3>
+                        <a href="#" class="btn btn-general btn-cs">Explore <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- recent camp ends -->
+
+    <!-- categories start -->
+    <div class="categories cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="catedory_title">
+                        <h4>Make your impact</h4>
+                        <h2>Fundraise for</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row cat_row">
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="images/smile-svgrepo-com.svg" class="img-fluid" alt="">
+                        <h3>Yourself</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="images/family-of-3-upper-body-svgrepo-com.svg" class="img-fluid" alt="">
+                        <h3>Family</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="category">
+                        <img src="images/solidarity-ribbon-svgrepo-com.svg" class="img-fluid" alt="">
+                        <h3>Charity</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="community cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="community_title">
+                        <h4>Happening near you</h4>
+                        <h2>Fundraisers in your community</h2>
+                    </div>
+                </div>
+                <div class="owl-carousel post_carousel">
+                    <div class="com_post">
+                        <div class="com_image">
+                            <img src="images/helping_hand.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="com_content">
+                            <h3>The opportunity to help</h3>
+                            <p>Explore this year's most generous cities, unforgettable
+                                stories around the globe, and the data behind your collective
+                                kindness. Look what help can do.</p>
+                        </div>
+                        <div class="fund">
+                            <div class="fund_des">
+                                <h4>Raised</h4>
+                                <p>$210</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Donations</h4>
+                                <p>10</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Goal</h4>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com_post">
+                        <div class="com_image">
+                            <img src="images/helping_kids.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="com_content">
+                            <h3>The opportunity to help</h3>
+                            <p>Explore this year's most generous cities, unforgettable
+                                stories around the globe, and the data behind your collective
+                                kindness. Look what help can do.</p>
+                        </div>
+                        <div class="fund">
+                            <div class="fund_des">
+                                <h4>Raised</h4>
+                                <p>$210</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Donations</h4>
+                                <p>10</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Goal</h4>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com_post">
+                        <div class="com_image">
+                            <img src="images/charity.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="com_content">
+                            <h3>The opportunity to help</h3>
+                            <p>Explore this year's most generous cities, unforgettable
+                                stories around the globe, and the data behind your collective
+                                kindness. Look what help can do.</p>
+                        </div>
+                        <div class="fund">
+                            <div class="fund_des">
+                                <h4>Raised</h4>
+                                <p>$210</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Donations</h4>
+                                <p>10</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Goal</h4>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com_post">
+                        <div class="com_image">
+                            <img src="images/helping_kids.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="com_content">
+                            <h3>The opportunity to help</h3>
+                            <p>Explore this year's most generous cities, unforgettable
+                                stories around the globe, and the data behind your collective
+                                kindness. Look what help can do.</p>
+                        </div>
+                        <div class="fund">
+                            <div class="fund_des">
+                                <h4>Raised</h4>
+                                <p>$210</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Donations</h4>
+                                <p>10</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Goal</h4>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="com_post">
+                        <div class="com_image">
+                            <img src="images/charity.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="com_content">
+                            <h3>The opportunity to help</h3>
+                            <p>Explore this year's most generous cities, unforgettable
+                                stories around the globe, and the data behind your collective
+                                kindness. Look what help can do.</p>
+                        </div>
+                        <div class="fund">
+                            <div class="fund_des">
+                                <h4>Raised</h4>
+                                <p>$210</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Donations</h4>
+                                <p>10</p>
+                            </div>
+                            <div class="fund_des">
+                                <h4>Goal</h4>
+                                <p>$500</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- categories ends -->
+
+    <!-- join us -->
+    <div class="join cp-60">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="join_us">
+                        <img src="images/flower-orange-3-svgrepo-com.svg" class="img-fluid" alt="">
+                        <h2>Ready to get started?<br> Join thousands of others today.</h2>
+                        <a href="#" class="btn btn-general btn-cs">Start with us <i
+                                class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- join us ends -->
+
+    <!-- footer starts -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="footer_content">
+                        <img src="images/amzvest_logo_dark.png" class="img-fluid" alt="">
+                        <ul class="social_links">
+                            <li>
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li>
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_content">
+                        <ul>
+                            <h4>Fundraise for</h4>
+                            <li>
+                                <a href="#">Medical</a>
+                            </li>
+                            <li>
+                                <a href="#">Emergency</a>
+                            </li>
+                            <li>
+                                <a href="#">Memorial</a>
+                            </li>
+                            <li>
+                                <a href="#">Education</a>
+                            </li>
+                            <li>
+                                <a href="#">Nonprofit</a>
+                            </li>
+                            <li>
+                                <a href="#">Support COVID-19 fundraisers</a>
+                            </li>
+                            <li>
+                                <a href="#">Crisis Relief</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_content">
+                        <ul>
+                            <h4>Learn More</h4>
+                            <li>
+                                <a href="#">How Amzvest works</a>
+                            </li>
+                            <li>
+                                <a href="#">Why Amzvest</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">Campaigns</a>
+                            </li>
+                            <li>
+                                <a href="#">Fundraising</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="footer_content">
+                        <ul>
+                            <h4>Resource</h4>
+                            <li>
+                                <a href="#">Terms</a>
+                            </li>
+                            <li>
+                                <a href="#">Privacy Notice
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">Legal</a>
+                            </li>
+                            <li>
+                                <a href="#">Accessibility Statement</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <div class="cc">
+                        <p>Copyright © 2023. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <!-- <script>
-            //owl-carousel
-            $(document).ready(function () {
-                $(".owl-carousel").owlCarousel(
-                    {
-                        items: 3,
-                        loop: true,
-                        autoplay: true,
-                        autoplayTimeout: 5000,
-                        smartSpeed: 500,
-                        nav: false,
-                        dots: false,
-                        touchDrag: true,
-                        mouseDrag: true,
-                        autoplayHoverPause: true,
-                        responsive: {
-                            0: {
-                                items: 1,
-                            },
-                            425: {
-                                items: 1,
-                            },
-                            767: {
-                                items: 2,
-                            },
-                            768: {
-                                items: 2,
-                            },
-    
-    
-                        }
+    <script src="js/owl.carousel.min.js"></script>
+    <script>
+        // post_carousel  
+        $(document).ready(function () {
+            $(".post_carousel").owlCarousel(
+                {
+                    items: 3,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    smartSpeed: 500,
+                    margin: 20,
+                    slideBy: 1,
+                    dotsEach: true,
+                    nav: false,
+                    dots: true,
+                    touchDrag: true,
+                    mouseDrag: true,
+                    autoplayHoverPause: true,
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        425: {
+                            items: 1,
+                        },
+                        767: {
+                            items: 2,
+                        },
+                        1024: {
+                            items: 3,
+                        },
+
+
                     }
-                );
-    
-            });
-        </script>         -->
+                }
+            );
+
+        });
+
+        //owl-carousel
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel(
+                {
+                    items: 1,
+                    loop: true,
+                    autoplay: true,
+                    autoplayTimeout: 5000,
+                    smartSpeed: 500,
+                    margin: 20,
+                    nav: true,
+                    dots: false,
+                    touchDrag: true,
+                    mouseDrag: true,
+                    autoplayHoverPause: true,
+                    navText: ["<i class='fa-solid fa-arrow-left'></i>", "<i class='fa-solid fa-arrow-right'></i>"],
+                    responsive: {
+                        0: {
+                            items: 1,
+                        },
+                        425: {
+                            items: 1,
+                        },
+                        767: {
+                            items: 1,
+                        },
+                        768: {
+                            items: 1,
+                        },
+
+
+                    }
+                }
+            );
+
+        });
+
+
+    </script>
+
+    <!-- header scroll -->
+    <script>
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('.header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+
 </body>
 
 </html>
